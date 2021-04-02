@@ -10,6 +10,8 @@ import com.senla.service.implementation.InstallationEngine;
 
 public class Main {
     public static void main(String[] args) {
-        
+        IProduct car = new Car();
+        IAssemblyLine assemblyLine = new AssemblyLineCars(new InstallationEngine(), new InstallationBody(), new InstallationChassis());
+        assemblyLine.assembleProduct(car);
     }
 }
