@@ -5,6 +5,7 @@ import com.senla.entity.IProductPart;
 import com.senla.service.IAssemblyLine;
 import com.senla.service.ILineStep;
 
+
 public class AssemblyLineCars implements IAssemblyLine {
     private final ILineStep firstLineStep;
     private final ILineStep secondLineStep;
